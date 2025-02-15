@@ -143,11 +143,6 @@ export const Panel = GObject.registerClass(
           this.panel,
         )
         this._setPanelMenu('dateMenu', DateMenu.DateMenuButton, this.panel)
-        this._setPanelMenu(
-          'activities',
-          Main.panel.statusArea.activities.constructor,
-          this.panel,
-        )
 
         this.panel.add_child(this._leftBox)
         this.panel.add_child(this._centerBox)
