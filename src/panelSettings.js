@@ -127,7 +127,7 @@ export function getPanelSize(settings, monitorIndex) {
     settings,
     'panel-sizes',
     monitorIndex,
-    settings.get_int('panel-size') || 48,
+    settings.get_int('panel-size') || 32,
   )
 }
 
