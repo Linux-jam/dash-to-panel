@@ -439,7 +439,6 @@ export const Panel = GObject.registerClass(
       } else {
         this._removePanelMenu('dateMenu')
         this._removePanelMenu(systemMenuName)
-        this._removePanelMenu('activities')
       }
 
       Main.ctrlAltTabManager.removeGroup(this)
