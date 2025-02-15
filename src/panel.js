@@ -706,10 +706,10 @@ export const Panel = GObject.registerClass(
       let w = 0,
         h = 0
 
-      const panelSize =
-        PanelSettings.getPanelSize(SETTINGS, this.monitor.index) +
-        SETTINGS.get_int('appicon-margin-todesktop') +
-        SETTINGS.get_int('appicon-margin-toscreenborder')
+const panelSize =
+  PanelSettings.getPanelSize(SETTINGS, this.monitor.index) +
+  0 +  // appicon-margin-todesktopを0に設定
+  0    // appicon-margin-toscreenborderを0に設定
       this.dtpSize = panelSize * scaleFactor
 
       if (
